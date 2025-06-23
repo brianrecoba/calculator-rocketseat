@@ -63,10 +63,19 @@
         );
       }
 
+      function Button({ children }) {
+        return (
+          <Text as="button" variant="heading">
+            {children}
+          </Text>
+        );
+      }
+
       function App() {
         return (
           <main className="py-28 px-16">
             <Text variant="blast">Hello World</Text>
+            <Buttton>Teste</Buttton>
           </main>
         );
       }
